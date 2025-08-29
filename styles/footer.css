@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-fundo);
+    color: var(--preto);
+    padding: 2rem 0;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

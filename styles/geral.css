@@ -1,6 +1,3 @@
-/* ------------------------- */
-/* 1. VARIÁVEIS E ESTILOS GLOBAIS  */
-/* ------------------------- */
 :root {
 --color-brand: #5865f2;
 --color-dark: #23272a;
@@ -9,25 +6,20 @@
 --color-text: #23272a;
 --color-text-light: #ffffff;
 
---font-family-sans: "Open Sans", sans-serif;
---spacing-md: 1.5rem;
---spacing-lg: 3rem;
+--ff-open: "Open Sans", sans-serif;
+--ff-guy: "Luckiest Guy", cursive;
 --border-radius: 2rem;
-}
 
-/* Reset Básico e Box-Sizing */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+--text-md: 800 2.4rem var(--ff-open);
+--text-regular: 400 1.6rem var(--ff-open);
+--text-xl:800 3.2rem var(--ff-guy);
 }
 
 /* Estilos base para o corpo (Mobile First) */
 body {
-font-family: var(--font-family-sans);
+font-family: var(--font-family-open);
 color: var(--color-text);
-line-height: 1.6;
-font-size: 16px;
+font: var(--text-regular);
 }
 
 img {
@@ -41,13 +33,7 @@ width: 90%;
 max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
-padding-top: var(--spacing-lg);
-padding-bottom: var(--spacing-lg);
 }
-
-/* ------------------------- */
-/* 2. COMPONENTES REUTILIZÁVEIS */
-/* ------------------------- */
 
 .button {
 display: inline-block;
@@ -80,10 +66,6 @@ outline: 2px solid var(--color-white);
 outline-offset: 2px;
 }
 
-/* ------------------------- */
-/* 3. SEÇÕES DA PÁGINA     */
-/* ------------------------- */
-
 /* Seção Hero (Cabeçalho) */
 .hero {
 background-color: var(--color-brand);
@@ -93,25 +75,26 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-background-image: url("https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"); /* Exemplo de fundo similar */
+background-image: url(../src/assets/images/header_bg.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-min-height: 85vh;
-padding: var(--spacing-lg) 0;
 }
 
 .hero h1 {
-font-size: clamp(1.8rem, 5vw, 2.5rem);
-font-weight: 800;
+font: var(--text-xl);
 text-transform: uppercase;
 margin-bottom: 1rem;
+width: 278px;
+text-align: start;
+margin: 70px 126px 24px 24px;
 }
 
 .hero p {
 max-width: 50ch; /* Limita a largura do parágrafo para melhor legibilidade */
 margin-bottom: 1.5rem;
-font-size: clamp(1rem, 2.5vw, 1.1rem);
+font: var(--text-regular);
+width: 381px;
 }
 
 .hero-buttons {

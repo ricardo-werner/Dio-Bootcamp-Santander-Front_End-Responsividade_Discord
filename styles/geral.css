@@ -13,9 +13,11 @@
 --text-md: 800 2.4rem var(--ff-open);
 --text-regular: 400 1.6rem var(--ff-open);
 --text-xl:800 3.2rem var(--ff-guy);
+
+--text-align-s: start;
+--text-align-c: center;
 }
 
-/* Estilos base para o corpo (Mobile First) */
 body {
 font-family: var(--font-family-open);
 color: var(--color-text);
@@ -43,7 +45,7 @@ text-decoration: none;
 font-weight: 700;
 transition: all 0.2s ease-in-out;
 margin-top: 0.5rem;
-text-align: center;
+text-align: var(--text-align-c);
 border: none;
 cursor: pointer;
 }
@@ -74,7 +76,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-text-align: center;
+text-align: var(--text-align-c);
 background-image: url(../src/assets/images/header_bg.png);
 background-repeat: no-repeat;
 background-position: center;
@@ -86,7 +88,7 @@ font: var(--text-xl);
 text-transform: uppercase;
 margin-bottom: 1rem;
 width: 278px;
-text-align: start;
+text-align: var(--text-align-s);
 margin: 70px 126px 24px 24px;
 }
 
@@ -95,6 +97,7 @@ max-width: 50ch; /* Limita a largura do parágrafo para melhor legibilidade */
 margin-bottom: 1.5rem;
 font: var(--text-regular);
 width: 381px;
+text-align: var(--text-align-s);
 }
 
 .hero-buttons {
@@ -105,7 +108,6 @@ width: 100%;
 max-width: 480px;
 }
 
-/* Seções de Destaque */
 .feature-section {
 display: flex;
 flex-direction: column;
@@ -127,10 +129,9 @@ font-weight: 800;
 margin-bottom: 1rem;
 }
 
-/* Seção Final - Conexão */
 .connection-section {
 background-color: var(--color-gray);
-text-align: center;
+text-align: var(--text-align-c);
 }
 
 .connection-section h2 {
@@ -145,7 +146,6 @@ margin-left: auto;
 margin-right: auto;
 }
 
-/* Rodapé */
 .main-footer {
 background-color: var(--color-dark);
 color: var(--color-text-light);
@@ -156,13 +156,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 0.5rem;
-padding-top: var(--spacing-md);
-padding-bottom: var(--spacing-md);
 }
-
-/* ----------------------------------- */
-/* 4. MEDIA QUERY PARA TELAS MAIORES  */
-/* ----------------------------------- */
 
 @media (min-width: 768px) {
 .container {
@@ -182,7 +176,6 @@ padding-bottom: var(--spacing-md);
     align-items: center;
 }
 
-/* Inverte a ordem das colunas para seções com a imagem à direita */
 .feature-section:nth-of-type(even) .image-content {
     order: 2;
 }

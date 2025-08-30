@@ -1,127 +1,121 @@
 :root {
---color-brand: #5865f2;
---color-dark: #23272a;
---color-white: #ffffff;
---color-gray: #f6f6f6;
---color-text: #23272a;
---color-text-light: #ffffff;
+    --color-brand: #5865f2;
+    --color-dark: #23272a;
+    --color-white: #ffffff;
+    --color-gray: #f6f6f6;
+    --color-text: #23272a;
+    --color-text-light: #ffffff;
 
---ff-open: "Open Sans", sans-serif;
---ff-guy: "Luckiest Guy", cursive;
---border-radius: 2.8rem;
+    --ff-open: "Open Sans", sans-serif;
+    --ff-guy: "Luckiest Guy", cursive;
+    --border-radius: 2.8rem;
 
---text-md: 800 2.4rem var(--ff-open);
---text-regular: 400 1.6rem var(--ff-open);
---text-xl:800 3.2rem var(--ff-guy);
+    --text-md: 800 2.4rem var(--ff-open);
+    --text-regular: 400 1.6rem var(--ff-open);
+    --text-xl:800 3.2rem var(--ff-guy);
 
---text-align-s: start;
---text-align-c: center;
+    --text-align-s: start;
+    --text-align-c: center;
 }
 
 body {
-font-family: var(--font-family-open);
-color: var(--color-text);
-font: var(--text-regular);
+    font-family: var(--font-family-open);
+    color: var(--color-text);
+    font: var(--text-regular);
 }
 
 img {
-max-width: 100%;
-height: auto;
-display: block;
+    width: 37.9rem;
+    height: 25.2rem;
 }
 
 .container {
-width: 42.8rem;
-height: 50.6rem;
-margin: 0 auto;
+    width: 42.8rem;
+    height: 50.6rem;
+    margin: 0 auto;
 }
 
 .button {
-display: inline-block;
-padding: 1rem 2rem;
-border-radius: var(--border-radius);
-text-decoration: none;
-transition: all 0.2s ease-in-out;
-margin: 1.2rem 2.4rem 0.8rem;
-text-align: var(--text-align-c);
-border: none;
-cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    margin: 1.2rem 2.4rem 0.8rem;
+    text-align: var(--text-align-c);
+    border: none;
+    cursor: pointer;
 }
 
 .button-primary {
-background-color: var(--color-white);
-color: var(--color-text);
+    background-color: var(--color-white);
+    color: var(--color-text);
 }
 
 .button-secondary {
-background-color: var(--color-dark);
-color: var(--color-text-light);
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
 }
 
 .button:hover,
 .button:focus-visible {
-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-transform: translateY(-0.2rem);
-outline: 2px solid var(--color-white);
-outline-offset: 0.2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+    outline: 2px solid var(--color-white);
+    outline-offset: 0.2rem;
 }
 
-/* Seção Hero (Cabeçalho) */
 .hero {
-background-color: var(--color-brand);
-color: var(--color-text-light);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: var(--text-align-c);
-background-image: url(../src/assets/images/header_bg.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+    background-color: var(--color-brand);
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: var(--text-align-c);
+    background-image: url(../src/assets/images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero h1 {
-font: var(--text-xl);
-text-transform: uppercase;
-width: 27.8rem;
-text-align: var(--text-align-s);
-margin: 7rem 12.6rem 2.4rem 2.4rem;
+    font: var(--text-xl);
+    text-transform: uppercase;
+    width: 27.8rem;
+    text-align: var(--text-align-s);
+    margin: 7rem 12.6rem 2.4rem 2.4rem;
 }
 
 .hero p {
-padding: 0 2.4rem;
-font: var(--text-regular);
-width: 38.1rem;
-text-align: var(--text-align-s);
+    padding: 0 2.4rem;
+    font: var(--text-regular);
+    width: 38.1rem;
+    text-align: var(--text-align-s);
 }
 
 .hero-buttons {
-display: flex;
-flex-direction: column;
-width: 38.1rem;
-height: 5.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 38.1rem;
+    height: 5.4rem;
 }
 
 .feature-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 2rem;
-}
-
-.feature-section:nth-of-type(odd) {
-background-color: var(--color-gray);
-}
-
-.feature-section .text-content {
-max-width: 50ch;
+    display: flex;
+    width: 42.8rem;
+    padding: 4rem 2.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.7rem;
 }
 
 .feature-section h2 {
-font-size: clamp(1.5rem, 5vw, 2.2rem);
-font-weight: 800;
-margin-bottom: 1rem;
+font: var(--text-md);
+text-align: var(--text-align-s);
+width: 37rem;
+
 }
 
 .connection-section {
@@ -129,14 +123,8 @@ background-color: var(--color-gray);
 text-align: var(--text-align-c);
 }
 
-.connection-section h2 {
-font-size: clamp(1.5rem, 5vw, 2.2rem);
-font-weight: 800;
-}
-
 .connection-section .subtitle {
 margin-bottom: 2rem;
-max-width: 60ch;
 margin-left: auto;
 margin-right: auto;
 }

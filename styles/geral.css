@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: var(--font-family-open);
+    font-family: var(--ff-open);
     color: var(--color-text);
     font: var(--text-regular);
 }
@@ -162,5 +162,5 @@ img {
 
 .feature-section:nth-of-type(even) .image-content {
     order: 2;
-}
+    }
 }
